@@ -40,4 +40,11 @@ public class NearbySearchController {
         return ResponseEntity.ok().body(response.getPlaces());
 
     }
+
+    @GetMapping("/location")
+    public ResponseEntity<String> getLocation() {
+        return ResponseEntity.ok("Map endpoint working!");
+    }
+}
+
 }
