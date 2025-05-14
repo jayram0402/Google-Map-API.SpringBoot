@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: google-map-api
-          image: jayram0402/google-map-api:latest  
+          image: jayram0407/google-map-api:latest  
           ports:
             - containerPort: 8080
