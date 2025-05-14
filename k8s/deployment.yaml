@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: google-map-api
+  labels:
+    app: google-map-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: google-map-api
+  template:
+    metadata:
+      labels:
+        app: google-map-api
+    spec:
+      containers:
+        - name: google-map-api
+          image: jayram0402/google-map-api:latest  
+          ports:
+            - containerPort: 8080
